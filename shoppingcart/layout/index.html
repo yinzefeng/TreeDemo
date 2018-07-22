@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>购物车实例</title>
+
+    <link rel="stylesheet" href="../../iview/css/iview.css">
+
+    <script src="../../common/js/vue.js"></script>
+    <script src="../../iview/js/iview.js"></script>
+    <script src="../../iview/locale/zh-CN.js"></script>
+    <script>
+        iview.lang('zh-CN');
+    </script>
+</head>
+<body>
+  <div id="app">
+      <i-table width="640px" height="200px" id="datatable1"
+               size="small"
+               :columns="columns"
+               :data="cartList"
+               stripe
+               highlight-row>
+      </i-table>
+  </div>
+
+  <script src="../js/shoppingcart.js"></script>
+</body>
+</html>

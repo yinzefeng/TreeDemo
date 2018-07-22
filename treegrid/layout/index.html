@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Vue.js tree view example</title>
+    <link rel="stylesheet" href="../../iview/css/iview.css">
+    <link rel="stylesheet" href="../css/treegrid.css" type="text/css" />
+
+    <!-- Delete ".min" for console warnings in development -->
+
+    <script src="../../common/js/vue.js"></script>
+    <script src="../../common/js/common.js"></script>
+    <script src="../../iview/js/iview.js"></script>
+    <script src="../../iview/locale/zh-CN.js"></script>
+    <script>
+      iview.lang('zh-CN');
+   </script>
+  </head>
+
+  <body>
+
+    <p>(You can double click on an item to turn it into a folder.)</p>
+    <div id="app">
+      <treegrid
+      :items='data' 
+      :columns='columns'
+      @on-row-click='rowClick'
+      @on-selection-change='selectionClick'
+      @on-sort-change='sortClick'>
+      </treegrid>
+    </div>
+
+
+
+    <script src="../js/treegrid.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+
+</html>
